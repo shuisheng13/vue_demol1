@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <div id="app">
+            <cpn></cpn>
+        </div>
+
+        <template id="temp2">
+            <div>
+                <h1>{{name}}</h1>
+                <button @click="childbtn2">我是孙按钮</button>
+            </div>
+        </template>
+        <template id="temp1">
+            <div>
+                <h1>{{name}}</h1>
+                <button @click="childbtn1">我是子按钮</button>
+                <cpn1></cpn1>
+            </div>
+        </template>
+
+    <script src="../../vue.js"></script>
+
+    <script>
+        /***
+         * 孙组件
+         * @type {{template: string, data: {name: string, age: number}, methods: {childClick1(): void}}}
+         */
+        const cpn1 ={
+            template: "#temp2",
+            data(){
+                return{
+                    name:"ccc",
+                    age:288
+                }
+
+            },
+            methods:{
+                childbtn2(){
+                    console.log(this.$parent.name)
+                }
+            }
+        }
+        /***
+         * 子组件
+         * @type {{template: string, data: {name: string, age: number}, methods: {childClick(): void}}}
+         */
+        const cpn = {
+            template:"#temp1",
+            data(){
+                return {
+                    name:"bbb",
+                    age:28
+                }
+
+            },
+            methods: {
+                childbtn1(){
+                    //console.log(this.$parent);
+                    console.log(this.$root.name)
+                }
+            },
+            components:{
+                cpn1
+            }
+        }
+
+        /***
+         * 父组件
+         */
+        const  app = new Vue({
+            el:"#app",
+            data:{
+                name:"aaa",
+                age:18
+            },
+            methods:{
+                test1(){
+
+                }
+            },
+            components:{
+                cpn
+            }
+
+        })
+
+    </script>
+</body>
+</html>

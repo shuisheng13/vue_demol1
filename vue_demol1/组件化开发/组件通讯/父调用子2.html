@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+
+        <cpn></cpn>
+        <button @click="fatherClick">按钮</button>
+    </div>
+    <template id="temp1">
+        <div>
+            <h1>{{name}}</h1>
+            <cpn-child></cpn-child>
+            <button @click="children1btn">子按钮1</button>
+        </div>
+    </template>
+
+
+    <template id="temp2">
+        <div>
+            <h1>{{name}}</h1>
+        </div>
+    </template>
+
+<script src="../../vue.js"></script>
+
+<script>
+
+    const  cpnChild = {
+        template:temp2,
+        data(){
+            return{
+                name:"bbb",
+                age:28
+            }
+        },
+        methods:{
+            // children1btn:{
+            //
+            // }
+        },
+    }
+
+
+    const  cpn = {
+        template:temp1,
+        data(){
+            return{
+                name:"aaaa",
+                age:18
+            }
+        },
+        methods:{
+            children1btn(){
+               //console.log(this.$children[0].name)
+                console.log(this.$children[0].name);
+            }
+        },
+        components:{
+            cpnChild
+        }
+    }
+
+    const  app = new Vue({
+        el:"#app",
+        components: {
+            cpn
+        },
+        methods : {
+            fatherClick(){
+                console.log(this.$children[0].name)
+            }
+        }
+
+    })
+
+</script>
+</body>
+</html>
