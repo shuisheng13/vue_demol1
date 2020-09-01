@@ -1,0 +1,92 @@
+
+<html>
+
+<body>
+    <div id="app">
+
+        <h1>总价格： {{f1()}}</h1>
+        <h1>总价格*n： {{f2()}}</h1>
+    </div>
+    
+</body>
+
+<script src="../vue.js">
+</script>
+
+<script>
+
+    let app = new Vue({
+        el:"#app",
+        data:{
+            books:[
+                {
+                    id:1,
+                    price:100
+                },
+                {
+                    id:2,
+                    price:1090
+                },
+                {
+                    id:3,
+                    price:200
+                },
+                {
+                    id:4,
+                    price:305
+                },
+                {
+                    id:5,
+                    price:209
+                },
+                {
+                    id:6,
+                    price:550
+                },
+                {
+                    id:7,
+                    price:808
+                },
+            ]
+        },
+       methods:{
+          f1:(function(){
+              
+               return this.books.reduce(function(pre,book){
+                    return pre+book.price*book.id*2;
+              },0)
+          }),
+          f2:(function(){
+              console.log("--------------@@@@@@@@@---------------------------");
+            return this.books.filter(book => book.price>5).map(book => book.id+1).reduce(function(pre,book){
+                return pre+book.id*book.price;
+            },0);
+          })        
+       }
+    })
+
+
+let numnbers = [111,23,45,665,78,99,9,787,4354,4343,223,556,787];
+let numbersNew =  numnbers.filter(function(n){
+    return n>100;
+})
+console.log("filter :  " +numbersNew);
+let numbers2 = [232,111,3244,531,645,776,889,901,1001,2321,456];
+let numbers2New = numbers2.map(function(n){
+    return n+1;
+})
+console.log("map : "+numbers2New);
+
+let numbers3 = [11,22,331,434,5645,7788,765,66,744,323,898,910];
+let numbers3New = numbers3.reduce(function(pre,current){
+   return pre+current;
+},0)
+console.log("reduce : "+numbers2New);
+
+
+let nbs = [11,22,33,44,55,123,232,4545,322,1,2,3,4,5,6,7,89,10]
+let bbs = nbs.filter(n => n<10).map(n => n*2).reduce((pre,n) => pre+n );
+console.log("bbs :  "+bbs);
+</script>
+
+</html>

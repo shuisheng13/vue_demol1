@@ -1,0 +1,45 @@
+
+<!--  对象方式动态绑定样式 -->
+
+<head>
+    <style>
+
+        .aaa{
+            color: red;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<html lang="en">
+
+<body>
+
+  <div id="app">
+  <h1  style="color: blue;" :style="[colr,size]">你好杨老板</h1>
+
+  <h1  :style="getstyles()">你好杨老板2</h1>
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+        const app = new Vue({
+        el:"#app",
+        data:{
+            message:"你好杨老板",
+            img:"/Users/yanghaohua/Downloads/高清图片/三体智子4K高清壁纸_彼岸图网.jpg",
+            ahref:"http://www.baidu.com",
+            colr:{color: 'red'},
+            size:{'font-size': '100px'}
+
+        },
+       methods: {
+        getstyles: function(){
+            return [this.colr,this.size];
+        }
+       }
+    })
+
+    
+</script>
+
+</html>

@@ -1,0 +1,51 @@
+
+<html>
+    <body>
+        <div id="app">
+            <cpna></cpna>
+      
+           
+        </div>
+    </body>
+
+    <script src="../../vue.js"></script>
+    <script>
+        
+        const conp1 = Vue.extend({
+            template:`
+            <div> 
+                   <h3>我是谁1a</h3>     
+                   <h3>谁是我1a</h3>  
+                   <h3>是我谁1a</h3>  
+                   <h3>是谁我1a</h3>  
+                </div>`
+        })
+
+        const conp2 = Vue.extend({
+            template:`
+                <div> 
+                   <h2>我是谁2</h2>     
+                   <h2>谁是我2</h2>  
+                   <h2>是我谁2</h2>  
+                   <h2>是谁我2</h2>  
+                   <cpn1></cpn1>
+
+                </div>
+            `,
+            components:{
+                cpn1:conp1
+            }
+        })
+
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message:"测试1"
+            },
+            components:{
+                cpna:conp2
+                
+            }
+        })
+    </script>
+</html>

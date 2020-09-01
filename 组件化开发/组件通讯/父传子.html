@@ -1,0 +1,54 @@
+
+<html>
+
+<body>
+
+    <div id="app">
+      <cpn1 :cmovies="movies" :ctitle="title"></cpn1>      
+    </div>
+
+
+    <template id="temp1">
+        <div>
+            <ul>
+
+                <li v-for="item in cmovies">{{item}}</li>
+            </ul>
+        <p>{{ctitle}}</p>
+        </div>
+
+    </template>
+
+
+</body>
+<script src="../../vue.js"></script>
+<script>
+
+
+    const cpn1 = {
+        template:"#temp1",
+        props:["cmovies","ctitle"],
+        data(){
+            return {};
+        },
+        methods:{
+
+        }
+    }
+
+    const app = new Vue({
+
+        el:"#app",
+        data:{
+            movies:["海贼王","死神","火影","狼牙"],
+            title:"你好杨老板"
+        },
+        components:{
+           cpn1
+        }
+
+    })
+
+</script>
+
+</html>

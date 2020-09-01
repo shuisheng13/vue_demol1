@@ -1,0 +1,38 @@
+
+<html>
+    <body>
+        <div id="app">
+            <h1>组件1</h1>
+            <cpn></cpn>
+            
+        </div>
+        <div id="app2">
+            <h1>组建2</h1>
+            <cpn></cpn>
+            <cpn></cpn>
+            <cpn></cpn>
+        </div>
+    </body>
+
+    <script src="../../vue.js"></script>
+    <script>
+
+        const conpC = Vue.extend({
+            template:`
+                <div> 
+                   <h2>我是谁</h2>     
+                    
+                </div>
+            `
+        })
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message:"测试1"
+            },
+            components:{
+                cpn:conpC
+            }
+        })
+    </script>
+</html>

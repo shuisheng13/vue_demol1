@@ -1,0 +1,44 @@
+
+<!--  对象方式动态绑定样式 -->
+
+<head>
+    <style>
+
+        .aaa{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<html lang="en">
+
+<body>
+
+  <div id="app">
+  <h1  :style="{color:isColor,fontSize:isSize}">你好杨老板</h1>
+
+  <h1  :style="clo()">你好杨老板2</h1>
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+        const app = new Vue({
+        el:"#app",
+        data:{
+            message:"你好杨老板",
+            img:"/Users/yanghaohua/Downloads/高清图片/三体智子4K高清壁纸_彼岸图网.jpg",
+            ahref:"http://www.baidu.com",
+            isColor:"red",
+            isSize:"100px"
+
+        },
+       methods: {
+         clo: function(){
+             return {color:this.isColor,fontSize:this.isSize};
+         }
+       }
+    })
+
+    
+</script>
+
+</html>

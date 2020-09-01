@@ -1,0 +1,39 @@
+
+<html>
+    <body>
+        <div id="app">
+            <cpn2></cpn2>
+        </div>
+
+        <template id="count">
+            <h1> 计数：{{con}}</h1>
+              <button @click="add">+</button>      
+              <button @click="sub">-</button>
+        </template>
+       
+    </body>
+
+    <script src="../../vue.js"></script>
+
+    <script>
+        
+        Vue.component('cpn2',{
+            template:count,
+            data(){
+                return{
+                    title2:'anfdsfadsf'
+                }
+            }
+        })
+    
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message:"测试1",
+                title:"abcd",
+                con:0
+            },
+        })
+    </script>
+</html>
+

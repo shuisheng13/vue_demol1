@@ -1,0 +1,52 @@
+
+<html>
+    <body>
+        <div id="app">
+            <cpn1></cpn1>
+            <cpn2></cpn2>
+               
+        </div>
+    </body>
+
+    <script src="../../vue.js"></script>
+    <script>
+        
+
+
+        // 注册主键语法糖
+
+        Vue.component('cpn1',{
+            template:`
+                <div> 
+                   <h2>我是谁1</h2>     
+                   <h2>谁是我1</h2>  
+                   <h2>是我谁1</h2>  
+                   <h2>是谁我1</h2>  
+                </div>
+            `
+        })
+
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message:"测试1"
+            },
+            // 注册局部组件
+            components:{
+                cpn2:{
+                    template:`
+                <div> 
+                   <h2>我是谁2</h2>     
+                   <h2>谁是我2</h2>  
+                   <h2>是我谁2</h2>  
+                   <h2>是谁我2</h2>  
+                   <cpn1></cpn1>
+
+                </div>
+            `
+                }
+                
+            }
+        })
+    </script>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+
+<style>
+    .active{
+        color: red;
+    }
+    
+</style>
+
+<body>
+<div id="app">
+   
+    <ul>
+        <li v-for="(item,index) in infos" 
+        :class="{active : currentIndex == index}"
+        @click="btn(index)">{{item}}</li>
+    </ul>
+    </div>
+
+    <script src="./vue.js"></script>  
+
+    <script>
+     const app =   new Vue({
+            el:'#app',
+            data:{
+                currentIndex:0,
+               infos:["海贼网","火影忍者","死神","斗罗大陆","猫与老鼠"]
+            },
+            methods:{
+                btn(index){
+                    this.currentIndex = index;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+
+<html>
+
+<body>
+
+    <div id="app">
+
+        <cpn1 :ctitles="title" @childclick="fatherclick "></cpn1>
+        <br>
+            <ul>
+                <li v-for="item in movies">{{item}}</li>
+            </ul>
+        </bt>
+    </div>
+
+    <template id="tmp1">
+       <div>
+        
+            <ur>
+                <button v-for="item in ctitles" @click="click(item)">{{item.name}}</button>
+            </ur> 
+           
+
+       </div>     
+    </template>
+
+
+    <script src="../../vue.js"></script>
+    <script>
+
+
+        const cpn1={
+            template:tmp1,
+            props:{
+                ctitles:{
+                    type:Array,
+                    defalut:[
+                    {
+                     id:1,
+                     name:"毛不怕"
+                    },
+                    {
+                     id:2,
+                     name:"人生路"
+                    },
+                    {
+                     id:3,
+                     name:"爱难掉"
+                    },
+                    {
+                     id:4,
+                     name:"发大财"
+                    }
+                    ],
+                    required:true
+                }
+            },
+            data(){
+                return {}
+            },
+            methods:{
+                click(item){
+                    console.log(item);
+                    this.$emit("childclick",item);
+                }
+            }
+           
+        }
+
+        const app = new Vue({
+            el:"#app",
+            data:{
+                title:[
+                    {
+                     id:1,
+                     name:"厨房家具"
+                    },
+                    {
+                     id:2,
+                     name:"电脑办公"
+                    },
+                    {
+                     id:3,
+                     name:"零食小吃"
+                    },
+                    {
+                     id:4,
+                     name:"药品药物"
+                    }
+                ],
+                movies:["八百","致我们消逝的青春","我爱你永远","东北灵异往事"]
+            },
+            components:{
+                cpn1
+            },
+            methods:{
+                fatherclick(item){
+                    
+                    if(item.id==1){
+                        this.movies=["八百1","致我们消逝的青春1","我爱你永远1","东北灵异往事1"]
+                    }else if(item.id==2){
+                        this.movies=["八百2","致我们消逝的青春2","我爱你永远2","东北灵异往事2"]
+                    }else if(item.id==3){
+                        this.movies=["八百3","致我们消逝的青春3","我爱你永远3","东北灵异往事3"]
+                    }else{
+                        this.movies=["八百4","致我们消逝的青春4","我爱你永远4","东北灵异往事4"]
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+
+</html>

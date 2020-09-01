@@ -1,0 +1,33 @@
+<html lang="en">
+
+
+<body>
+<div id="app">
+   
+
+
+    <ul>
+
+        <li v-for="item in infos ">{{item}}</li>
+    </ul>
+    <button @click="btn1">按钮1</button>
+    </div>
+
+    <script src="./vue.js"></script>
+
+    <script>
+     const app =   new Vue({
+            el:'#app',
+            data:{
+               infos:["a","b","c","d","e"]
+            },
+            mothods:{
+                btn1(){
+                    
+                    this.infos.push("23424");
+                }
+            }
+        })
+    </script>
+</body>
+</html>

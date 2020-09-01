@@ -1,0 +1,31 @@
+<html lang="en">
+
+
+<body>
+
+  <div id="app" >
+    <h1>
+        <img src="img">错误的图片</img>
+        <img v-bind:src="img"  height="400px" width="400px">图片</img>
+        <img :src="img" height="400px" width="400px">简写图片</img>
+        <a href ="ahref">错误的链接</a>
+        <a v-bind:href="ahref">正确的链接</a>
+        <a :href="ahref">简写链接</a>
+    </h1>
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+        const app = new Vue({
+        el:"#app",
+        data:{
+            message:"你好杨老板",
+            img:"/Users/yanghaohua/Downloads/高清图片/三体智子4K高清壁纸_彼岸图网.jpg",
+            ahref:"http://www.baidu.com"
+        },
+    })
+
+    
+</script>
+
+</html>

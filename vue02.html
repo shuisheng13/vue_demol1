@@ -1,0 +1,28 @@
+
+<html lang="en">
+
+<body>
+
+    <div id="app">
+
+        <ul>
+
+            <li v-for="item in mvs">{{item}}</li>
+        </ul>
+    </div>
+
+
+
+</body>
+<script src="./vue.js"></script>
+<script>
+
+    const app = new Vue({
+        el:"#app",
+        data:{
+            mvs:["东莞","广州","上海","深圳","佛山"]
+        }
+    })
+</script>
+
+</html>

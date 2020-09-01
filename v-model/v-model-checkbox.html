@@ -1,0 +1,48 @@
+
+<html>
+    <body>
+        <div id="app">
+
+            <!-- 单选框 -->
+            <label for="agress" for="agress">
+
+                <input type="checkbox" id="agress" v-model="agress">协议
+                <br>
+                <button :disabled="!agress">下一步</button>
+            </label>
+            <br>
+            <br>
+            <input type="checkbox" value="篮球" v-model="buttos">篮球
+            <input type="checkbox" value="足球" v-model="buttos">足球
+            <input type="checkbox" value="排球" v-model="buttos">排球
+            <input type="checkbox" value="台球" v-model="buttos">台球
+            <input type="checkbox" value="肉球" v-model="buttos">肉球
+            <br>
+            <h1>{{buttos}}</h1>
+            <br>     <br>  <br>  <br>  <br> 
+            <!-- 动态值绑定 -->
+            <label v-for="item in womens" :for="item">
+              <input type="checkbox" :value="item" :id="item" v-model="mywomens" >{{item}}      
+
+            </label>
+
+            <br>
+
+            <h2>我喜欢的女人们 : {{mywomens}}</h2>
+
+        </div>
+    </body>
+
+    <script src="../../vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                agress:false,
+                buttos:[],
+                womens:['貂蝉','王昭君',"西施",'杨玉环','潘金莲','李师师','步春华'],
+                mywomens:[]
+            }
+        })
+    </script>
+</html>

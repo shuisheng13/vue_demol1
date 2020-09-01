@@ -1,0 +1,43 @@
+<html lang="en">
+
+<body>
+
+  <div id="app">
+      <h1>{{message}}</h1>
+      <h2 v-once>{{message}}</h2>
+     <h3>{{ul}}</h3>
+     <h4 v-html="ul"></h4>
+     <h1 v-pre>{{message}}</h1>   //禁止解析语法 原封不动的展示
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+
+    const app = new Vue({
+        el:"#app",
+        
+        data:{
+            message:"你好杨老板",
+            ul:"<a href='www.baidu.com'>百度</a>",
+            num:0
+        },
+        methods:{
+            add: function(){
+                this.num++;
+                console.log("add被执行");
+            },
+            sub:function(){
+                this.num--;
+                console.log("sub被执行");
+            }
+        },
+        created:function(){
+            console.log("created");
+        },
+        mounted:function(){
+            console.log("mounted");
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">  
+    <style>
+          [v-cloak]{
+            display: none;
+          }  
+
+    </style>
+    
+</head>
+<body>
+
+  <div id="app" v-cloak>
+      <h1>{{message}}</h1>
+     
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+
+    setTimeout(() => {
+        const app = new Vue({
+        el:"#app",
+        data:{
+            message:"你好杨老板"
+        },
+      
+    })
+    }, 5000);
+
+    
+</script>
+
+</html>

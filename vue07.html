@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+
+    <style>
+        /* .old{
+            color: red;
+        }; */
+        .active{
+            color:red;
+        }    
+    </style>
+    <style>
+
+.lines{
+            color:rgb(76, 0, 255);
+        }    
+    </style>
+</head>
+
+<body>
+
+  <div id="app">
+    
+      <h1 v-bind:class="{active: isactive,lines: isline}">{{message}}
+      </h1>
+      <button v-on:click="c1">切换按钮</button>
+      <button v-on:click="c2">切换按钮</button>
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+        const app = new Vue({
+        el:"#app",
+        data:{
+            message:"你好杨老板",
+            img:"/Users/yanghaohua/Downloads/高清图片/三体智子4K高清壁纸_彼岸图网.jpg",
+            ahref:"http://www.baidu.com",
+            isactive:true,
+            isline:true
+        },
+        methods: {
+            c1:function(){
+                 this.isactive =  !this.isactive;   
+            },
+            c2:function(){
+                 this.isline =  !this.isline;   
+            }
+
+        }
+    })
+
+    
+</script>
+
+</html>

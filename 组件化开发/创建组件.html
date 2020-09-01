@@ -1,0 +1,36 @@
+
+<html>
+    <body>
+        <div id="app">
+
+            <my-comp></my-comp>
+            <my-comp></my-comp>
+            <my-comp></my-comp>
+            <my-comp></my-comp>
+            <my-comp></my-comp>
+            <my-comp></my-comp>
+        </div>
+    </body>
+
+    <script src="../../vue.js"></script>
+    <script>
+
+        const conpC = Vue.extend({
+            template:`
+                <div> 
+                   <h2>我是谁</h2>     
+                   <h2>谁是我</h2>  
+                   <h2>是我谁</h2>  
+                   <h2>是谁我</h2>  
+                </div>
+            `
+        })
+        Vue.component("my-comp",conpC)
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message:"测试1"
+            }
+        })
+    </script>
+</html>

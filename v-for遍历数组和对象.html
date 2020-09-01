@@ -1,0 +1,54 @@
+<html lang="en">
+
+
+<body>
+
+    
+<div id="app">
+    <!-- 遍历数组元素  -->
+    <ul>
+        <li v-for=" item in infos">{{item}}</li>
+    </ul>
+    <br> <br> <br> <br>
+
+    <!--  遍历数组的元素和数组的下标值   -->
+    <ul>
+        <li v-for="(item,index) in infos">{{item}}"---"{{index+1}}</li>
+    </ul>
+
+    <br> <br> <br> <br>
+
+    <!-- 遍历对象的属性 -->
+
+    <ul>
+        <li v-for="item in user"> {{item}}</li>
+    </ul>
+
+    <br> <br> <br> <br>
+
+    <!--遍历对象的key 和 value -->
+
+    <ul>
+        <li v-for="(value,key) in user">{{key}}:{{value}}</li>
+    </ul>
+    </div>
+
+    <script src="./vue.js"></script>
+
+    <script>
+     const app =   new Vue({
+            el:'#app',
+            data:{
+               infos:["西游记","大话西游","武汉你好","今夜就发财"],
+               user:{
+                 name:"杨老板",
+                 age:"18",
+                 "adress":"深圳宝安区交通运输局"
+               }
+            }
+        })
+    </script>
+</body>
+</html>
+
+

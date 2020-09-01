@@ -1,0 +1,43 @@
+
+<html>
+    <body>
+        <div id="app">
+
+            <!-- 单选框 -->
+             <select  name="abc" v-model="furter">
+                 <option value="苹果">苹果</option>
+                 <option value="香蕉">香蕉</option>
+                 <option value="橘子">橘子</option>
+                 <option value="汪汪">汪汪</option>
+                 <option value="蒙牛">蒙牛</option>
+                 <option value="伊利">伊利</option>
+                 <option value="火龙果">火龙果</option>
+             </select>   
+             <h1>你选择的是: {{furter}}</h1>
+             <br><br><br><br><br><br>
+
+             <!-- 多选框 -->
+
+             <select name="bvd" v-model="womens" multiple>
+                 <option value="西施">西施</option>
+                 <option value="王昭君">王昭君</option>
+                 <option value="貂蝉">貂蝉</option>
+                 <option value="杨玉环">杨玉环</option>
+                 <option value="潘金莲">潘金莲</option>
+                 <option value="李师师">李师师</option>
+             </select>
+             <h1> 女人们: {{womens}}</h1>
+        </div>
+    </body>
+
+    <script src="../../vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                furter:"苹果",
+                womens:[]
+            }
+        })
+    </script>
+</html>

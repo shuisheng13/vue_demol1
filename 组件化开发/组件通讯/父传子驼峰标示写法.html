@@ -1,0 +1,67 @@
+
+
+
+<html>
+
+<div id="app">
+
+    <cpn :c-info="info" :my-message-info="message"></cpn>
+</div>
+    <template id="tmp1">
+        <div>
+
+            <p>{{cInfo}}</p>
+            <p>{{myMessageInfo}}</p>
+        </div>
+       
+    </template>
+
+<body>
+
+    <script src="../../vue.js"></script>
+
+    <script>
+
+        const cpn = {
+            template:tmp1,
+            data(){
+                return {}
+            },
+            props:{
+                cInfo:{
+                    type:Object,
+                    default:{
+                        age:35,
+                        height:1.65,
+                        sex:"男"
+                    },
+                    required:true
+                },
+                myMessageInfo:{
+                    type:Object,String,
+                    default:"你好杨老板",
+                    required:true
+
+                }
+            }
+        }
+
+        const vue = new Vue({
+            el:"#app",
+            data:{
+                info:{
+                    age:18,
+                    height:1.88,
+                    sex:"男"
+                },
+                message:"你好杨老板,你是万中无一的潜力股"
+            },
+            components:{
+                cpn
+            }
+        })
+
+    </script>
+</body>
+
+</html>

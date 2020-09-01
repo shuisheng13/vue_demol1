@@ -1,0 +1,43 @@
+
+
+<html>
+    <div id="app">
+
+        <h1>结果:{{con}}</h1>
+        <button @click="bt1">按钮1</button>
+        <button @click="bt2">按钮2</button>
+        <button @click="bt2()">按钮3</button>
+        <button @click="bt3('abc',event)">按钮4</button>
+        <button @click="bt3(event,'abc')">按钮5</button>
+
+        <button @click="bt4('abc',$event)">按钮6</button>
+
+    </div>
+
+<script src="./vue.js"></script>
+<script>
+
+    const app = new Vue({
+        el:"#app",
+        data:{
+            con:0
+        },
+        methods:{
+            bt1(){
+            console.log("-------------");
+            },
+            bt2(abc){
+              console.log("-------",abc);      
+            },
+            bt3(event){
+              console.log("----------",event);            },
+              bt4(abc,event){
+                console.log("------------",abc,event);
+            }
+        },
+            
+    })
+
+
+</script>
+</html>
