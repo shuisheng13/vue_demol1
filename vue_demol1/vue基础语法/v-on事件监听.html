@@ -1,0 +1,59 @@
+<html>
+<body>
+
+    <!--  stop 修饰符 使当前事件生效  不会产生联动 -->
+        <div id="app" @click.stop='bt1'>
+            
+        <button @click.stop="bt2">按钮1</button>
+
+        <br><br><br><br><br><br>
+        <!-- .prevent 阻止默认事件 -->
+        <form action="www.baidu.com">
+           <input type="text"> <input type="submit" @click.prevent.stop="bt3">
+        </form>
+
+        <br><br><br><br><br>
+
+
+        <!-- 监听某个键盘的键帽 -->
+
+        <input type="text" @keyup="bt4">
+        <br>
+        <input type="text" @keyup.enter="bt5">
+
+        </div>
+
+
+
+<script src="vue.js"></script>
+
+<script>
+
+    const app= new Vue({
+        el:"#app",
+        data:{
+            con:0
+        },
+        methods:{
+            bt1(){
+                console.log("bt1~~~~~~~~~~~~~~");
+            },
+            bt2(){
+                console.log("bt2~~~~~~~~~~~~~~");
+            },
+            bt3(){
+                console.log("bt3~~~~~~~~~~~");
+            },
+            bt4(){
+                console.log("bt4~~~~~~~~~~~~");
+            },
+            bt5(){
+                console.log("bt5~~~~~~~~~~~~");
+            }
+        }
+
+    })
+</script>
+</body>
+
+</html>
