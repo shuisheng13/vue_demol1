@@ -2,20 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99f0e44e-154a-4f96-b052-5c8e9e6e3077" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vue_demol1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/组件化开发/组件通讯/子调用父.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/组件化开发/组件通讯/父调用子.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/组件化开发/组件通讯/父调用子2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue_study/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue_study/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue_study/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue_study/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue_study/.idea/vue_study.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue_study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v-for遍历数组和对象.html" beforeDir="false" afterPath="$PROJECT_DIR$/v-for遍历数组和对象.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/views/News.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/views/NewsA.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/views/NewsB.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/views/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic_router/src/views/User.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/components/common/TabBarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/components/common/TarBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/components/content/MainVue.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/views/cars/Cars.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/views/home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/views/profile/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-mail/src/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/css/Base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/img/test/cars.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/img/test/cars_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/img/test/category.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/img/test/category_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/img/test/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/img/test/home_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/img/test/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/img/test/profile_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/components/MainVue.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/components/tarbar/TabBarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/components/tarbar/TarBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/views/Cars.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/views/News.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tab-bar/src/views/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testvuecli3/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/components/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/components/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_router/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +109,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1gtjdWtTkvc6XewPzQgCtQXoXQQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -44,11 +130,30 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue_study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tab-bar/src/assets" />
+      <recent name="$PROJECT_DIR$/webpack/src/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webpack/src" />
+      <recent name="$PROJECT_DIR$/webpack/src/js" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/vue基础语法" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="99f0e44e-154a-4f96-b052-5c8e9e6e3077" name="Default Changelist" comment="" />
@@ -57,27 +162,76 @@
       <option name="presentableId" value="Default" />
       <updated>1598940874076</updated>
       <workItem from="1598940876586" duration="6595000" />
+      <workItem from="1599288102708" duration="19444000" />
+      <workItem from="1601948893962" duration="55000" />
+      <workItem from="1601949011472" duration="30000" />
+      <workItem from="1601949360383" duration="186000" />
+      <workItem from="1601963792611" duration="1973000" />
+      <workItem from="1601965813124" duration="4452000" />
+      <workItem from="1602058379982" duration="11059000" />
+      <workItem from="1602423581460" duration="1436000" />
     </task>
+    <task id="LOCAL-00001" summary="vue demol">
+      <created>1601963958186</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601963958186</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="vue demol" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue demol" />
   </component>
   <component name="WindowStateProjectService">
     <state x="748" y="305" key="#Web_Browsers" timestamp="1598942404068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="305" key="#Web_Browsers/0.0.1920.1040@0.0.1920.1040" timestamp="1598942404068" />
+    <state x="304" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599319607692">
+      <screen x="0" y="23" width="1680" height="965" />
+    </state>
+    <state x="304" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.965@0.23.1680.965" timestamp="1599319607692" />
+    <state x="304" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.972@0.23.1680.972" timestamp="1599288653715" />
+    <state x="578" y="264" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601966413147">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state x="578" y="264" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.974@0.23.1680.974" timestamp="1601966413147" />
+    <state x="294" y="110" key="CommitChangelistDialog2" timestamp="1601963946888">
+      <screen x="0" y="23" width="1680" height="976" />
+    </state>
+    <state x="294" y="110" key="CommitChangelistDialog2/0.23.1680.976@0.23.1680.976" timestamp="1601963946888" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1598942399754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598942399754" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598947023992">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="341" y="149" key="SettingsEditor" timestamp="1599288755571">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="341" y="149" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1599288755571" />
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2" timestamp="1601963998790">
+      <screen x="0" y="23" width="1680" height="976" />
+    </state>
+    <state x="440" y="251" key="Vcs.Push.Dialog.v2/0.23.1680.976@0.23.1680.976" timestamp="1601963998790" />
+    <state x="100" y="123" width="1480" height="765" key="dock-window-1" timestamp="1602203159201">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state x="100" y="123" width="1480" height="765" key="dock-window-1/0.23.1680.966@0.23.1680.966" timestamp="1602203159201" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1601968449676">
+      <screen x="0" y="23" width="1680" height="973" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.23.1680.973@0.23.1680.973" timestamp="1601968449676" />
+    <state x="545" y="234" width="670" height="637" key="search.everywhere.popup" timestamp="1601965256670">
+      <screen x="0" y="23" width="1680" height="976" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598947023992" />
+    <state x="545" y="232" width="670" height="630" key="search.everywhere.popup/0.23.1680.966@0.23.1680.966" timestamp="1599294195668" />
+    <state x="545" y="234" width="670" height="637" key="search.everywhere.popup/0.23.1680.976@0.23.1680.976" timestamp="1601965256670" />
   </component>
 </project>
